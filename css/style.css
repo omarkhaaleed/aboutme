@@ -1,0 +1,330 @@
+    /*base roles */
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'montserrat', sans-serif;
+    }
+    
+    p {
+        font-family: 'nunito', sans-serif;
+        line-height: 30px;
+        font-size: 20px;
+        color: #6c757d;
+    }
+    
+    .all_p {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        height: 100%;
+    }
+    /*start navbar */
+    
+    nav {
+        background: transparent;
+        padding: 20px 0;
+        transition: .5s all;
+        -webkit-transition: .5s all;
+        -moz-transition: .5s all;
+        -ms-transition: .5s all;
+        -o-transition: .5s all;
+    }
+    
+    .sticky {
+        background-color: rgb(255, 255, 255);
+        padding: 15px 0;
+        color: #000;
+        box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.05);
+        transition: .5s ease-in-out;
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -ms-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+    }
+    
+    nav.sticky .navbar-brand {
+        color: #000;
+        font-size: 30px;
+        transition: .5s all;
+        -webkit-transition: .5s all;
+        -moz-transition: .5s all;
+        -ms-transition: .5s all;
+        -o-transition: .5s all;
+    }
+    
+    nav.sticky a {
+        color: #000;
+    }
+    
+    nav .navbar-brand {
+        font-size: 30px;
+        color: #fff;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 10px;
+    }
+    
+    nav ul a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, .8);
+        font-size: 16px;
+        font-weight: 600px;
+        font-family: 'Nunito', sans-serif;
+        letter-spacing: 0.05em;
+    }
+    
+    nav ul a:hover {
+        color: #fff
+    }
+    
+    nav button {
+        position: absolute;
+        top: 9px;
+        right: 252px;
+        display: none;
+    }
+    
+    @media(max-width:575px) {
+        nav button {
+            display: block;
+            position: absolute;
+            top: 22px;
+            right: 15px;
+            color: #fff;
+        }
+        nav.sticky button {
+            color: #000;
+            outline: none;
+        }
+        nav ul li {
+            display: none;
+            font-size: 30px;
+            margin-bottom: 5px;
+        }
+        nav ul {
+            display: block;
+            text-align: center;
+        }
+        nav .navbar-brand {
+            display: block;
+            text-align: center;
+        }
+    }
+    /* start header*/
+    
+    header {
+        height: 100vh;
+        width: 100%;
+        background: url(../img/home/skill-bg.jpg);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+    .header_content {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .content-box {
+        max-width: 700px;
+        color: #fff;
+        margin: auto;
+    }
+    
+    .content-box h4 {
+        font-size: 30px;
+    }
+    
+    .content-box h1 {
+        font-size: 52px;
+    }
+    
+    .content-box a {
+        text-decoration: none;
+        color: #fff;
+        border: 2px solid #fff;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        padding: 5px 25px;
+        transition: 0.5s all ease-in-out;
+        -webkit-transition: 0.5s all ease-in-out;
+        -moz-transition: 0.5s all ease-in-out;
+        -ms-transition: 0.5s all ease-in-out;
+        -o-transition: 0.5s all ease-in-out;
+    }
+    
+    .content-box a:hover {
+        color: #000;
+        background-color: #fff;
+    }
+    
+    .content-box p {
+        color: #fff;
+    }
+    /* start  about us */
+    
+    .about .about_info {
+        padding-left: 30px;
+    }
+    
+    .about ul li a {
+        color: #000;
+        display: inline-block;
+        width: 42px;
+        height: 42px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 20px;
+        border: 1px solid #d4d4d4;
+        transition: 0.5s all ease-in-out;
+        -webkit-transition: 0.5s all ease-in-out;
+        -moz-transition: 0.5s all ease-in-out;
+        -ms-transition: 0.5s all ease-in-out;
+        -o-transition: 0.5s all ease-in-out;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+    
+    .about ul li a:hover {
+        color: #ee8683;
+    }
+    
+    @media(max-width:575px) {
+        .about .about_info {
+            margin-top: 20px;
+        }
+    }
+    /*start experience */
+    
+    .exp-class .progress {
+        height: 15px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        font-size: 10px;
+    }
+    
+    .exp-class .progress-bar {
+        background-color: #ee8683 !important;
+    }
+    
+    .exp-class label {
+        font-size: 20px;
+        margin-bottom: 12px;
+        margin-top: 5px;
+    }
+    /* start services*/
+    
+    .service-class {
+        background-color: #f8f9fa;
+        margin-top: 55px;
+        padding-bottom: 50px;
+    }
+    
+    .service-class .service_info {
+        padding: 40px 0;
+    }
+    
+    .card,
+    .card-header {
+        background-color: #faf8fa !important;
+    }
+    
+    .card-header {
+        border: none !important;
+    }
+    
+    .service-class i {
+        font-size: 50px;
+    }
+    
+    .service-border {
+        height: 2px;
+        width: 80px;
+        margin: 15px auto;
+        background-color: #e65f78;
+    }
+    /* end services*/
+    /* start hire me*/
+    
+    .hire_me h3 {
+        font-size: 50px;
+        font-weight: 700;
+        font-family: sans-serif;
+    }
+    
+    .hire_me img {
+        width: 20%;
+        height: 80%;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+    
+    .hire_me .hire_btn {
+        background-color: #e65f78;
+        margin-top: 15px;
+        color: #fff;
+    }
+    /* end hire me*/
+    /*footer*/
+    
+    footer {
+        background-color: #0b032c;
+        color: #fff;
+        padding: 10px;
+        margin-top: 30px;
+    }
+    
+    footer span {
+        display: block;
+        text-align: end;
+    }
+    
+    footer span i {
+        margin-left: 25px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    @media (max-width: 575px) {
+        .hire_me img {
+            width: 52%;
+            height: 64%;
+        }
+        footer span {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+    }
